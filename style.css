@@ -1,3 +1,9 @@
+/* Hover sur les liens de la navbar */
+.navbar-nav .nav-link:hover {
+  color: yellow !important;
+  transition: color 0.3s ease;
+}
+
 #Home {
     position: relative;
     background-image: url('src/store-image.png');
@@ -50,4 +56,25 @@
     background-color: #888;
     border-radius: 5px;
   } 
-  
+  /* Style de base pour les cartes */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effet au survol */
+.card:hover {
+  transform: translateY(-10px); /* Légère élévation */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Ombre plus forte */
+  border: 1px solid yellow; /* Optionnel : contour jaune au hover */
+}
+.card:hover .card-title {
+  color: #ffc107; /* jaune Bootstrap (warning) */
+}
+
+.card:hover .card-text {
+  color: #666;
+}
+.footer a {
+  color: white;
+  text-decoration: none;
+}
